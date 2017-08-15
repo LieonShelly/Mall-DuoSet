@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="191" id="KGk-i7-Jjw" customClass="BrownRecordsCell">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="190.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOa-V9-E4k">
+                        <rect key="frame" x="10" y="85" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="TAb-Oh-IRW"/>
+                            <constraint firstAttribute="height" constant="20" id="vNa-9V-Kmr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QPu-K1-AJw">
+                        <rect key="frame" x="40" y="65" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="UOs-0Z-l7v"/>
+                            <constraint firstAttribute="height" constant="60" id="ehg-Cs-e1c"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收割机刷卡的感觉深刻的价格打开撒感觉了深刻的价格死得更快了坚实的个考虑的收购价和" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-7o-kpL">
+                        <rect key="frame" x="120" y="10" width="328" height="85.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgH-ze-pSi">
+                        <rect key="frame" x="120" y="95.5" width="328" height="85"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.93725490199999995" green="0.12716615079999999" blue="0.11844441" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDE-AV-IDz">
+                        <rect key="frame" x="388" y="150.5" width="60" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="d6h-kf-6T2"/>
+                            <constraint firstAttribute="height" constant="30" id="qPk-fm-HPQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="找相似">
+                            <color key="titleColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NgH-ze-pSi" firstAttribute="top" secondItem="ceH-7o-kpL" secondAttribute="bottom" id="7Ba-tM-3g9"/>
+                    <constraint firstItem="ceH-7o-kpL" firstAttribute="leading" secondItem="QPu-K1-AJw" secondAttribute="trailing" constant="20" id="8Ft-yp-1vH"/>
+                    <constraint firstAttribute="trailing" secondItem="ceH-7o-kpL" secondAttribute="trailing" constant="20" id="Hgs-O6-rZy"/>
+                    <constraint firstItem="cOa-V9-E4k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OfF-FF-yX0"/>
+                    <constraint firstItem="ceH-7o-kpL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Rlq-JQ-iBs"/>
+                    <constraint firstAttribute="trailing" secondItem="HDE-AV-IDz" secondAttribute="trailing" constant="20" id="SAS-e8-YZS"/>
+                    <constraint firstItem="QPu-K1-AJw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UYA-f9-m7t"/>
+                    <constraint firstAttribute="trailing" secondItem="NgH-ze-pSi" secondAttribute="trailing" constant="20" id="bzn-8Q-04T"/>
+                    <constraint firstItem="NgH-ze-pSi" firstAttribute="height" secondItem="ceH-7o-kpL" secondAttribute="height" id="cw0-qD-bjR"/>
+                    <constraint firstItem="NgH-ze-pSi" firstAttribute="leading" secondItem="QPu-K1-AJw" secondAttribute="trailing" constant="20" id="dGb-t7-nLr"/>
+                    <constraint firstItem="QPu-K1-AJw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="diI-QO-i2h"/>
+                    <constraint firstAttribute="bottom" secondItem="NgH-ze-pSi" secondAttribute="bottom" constant="10" id="iOK-Hg-ywe"/>
+                    <constraint firstItem="NgH-ze-pSi" firstAttribute="top" secondItem="ceH-7o-kpL" secondAttribute="bottom" id="knv-GC-aUv"/>
+                    <constraint firstAttribute="bottom" secondItem="HDE-AV-IDz" secondAttribute="bottom" constant="10" id="ouD-wT-Kdg"/>
+                    <constraint firstItem="cOa-V9-E4k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wTE-5v-euD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftConstraints" destination="diI-QO-i2h" id="KDX-XV-Dlv"/>
+                <outlet property="nameLable" destination="ceH-7o-kpL" id="pj0-PG-9np"/>
+                <outlet property="pricelLabel" destination="NgH-ze-pSi" id="Gjn-a4-57a"/>
+                <outlet property="sameBtn" destination="HDE-AV-IDz" id="cYj-ln-F98"/>
+                <outlet property="shopIcomImageView" destination="QPu-K1-AJw" id="gPi-ZI-gby"/>
+                <outlet property="statusImageView" destination="cOa-V9-E4k" id="8cC-yT-Yif"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="125.5"/>
+        </tableViewCell>
+    </objects>
+</document>

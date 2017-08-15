@@ -1,0 +1,227 @@
+//
+//  PrefixHeader.pch
+//  DuoSet
+//
+//  Created by Seven-Augus on 2016/11/22.
+//  Copyright © 2016年 Seven-Augus. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "SourceFileHeader.h"
+
+#import "SignInViewController.h" // 签到
+#import "MessageCenterViewController.h" // 消息中心
+#import "SearchViewController.h" // 搜索
+
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "WebRequest.h"
+#import "UIButton+CountDown.h"
+#import "ValiMobile.h"
+#import "UIView+Toast.h"
+#import "UIView+Extension.h"
+
+
+#define Img_url @"http://192.168.1.71/img/"
+
+#define Base_Url @"http://192.168.1.71/duoji/plat/themes"//首页专题
+#define Base_Ad @"http://192.168.1.71/duoji/advertisement/list"//广告
+#define Outfit_Url @"http://192.168.1.71/duoji/outfit/list"//穿戴课堂
+#define Outfit_Detail_Url @"http://192.168.1.71/duoji/outfit/info"//穿戴详情接口
+#define Base_Img_Url @"http://192.168.1.71/img/"//请求图片接口
+#define RecommendToYou_Url @"http://192.168.1.71/duoji/recommendForYou/products"//为你推荐
+#define TOP_Url @"http://192.168.1.71/duoji/characteristic/top"
+#define ChuanDai_IsGood_Url @"http://192.168.1.71/duoji/outfit/discuss"
+#define Collect_Url @"http://192.168.1.71/duoji/collect/list"
+
+#define One_Level_Url @"http://192.168.1.71/duoji/navigetion/oneLevel"//分类第一级
+#define Navlevel_Info_Url @"http://192.168.1.71/duoji/navigetion/info"//分类详情
+
+#define Season_Hot_Url @"http://192.168.1.71/duoji/seasonHot/products"//当季热卖
+#define ThemePro_Url @"http://192.168.1.71/duoji/plat/theme/products"
+#define DeleCoupon_Url @"http://192.168.1.71/duoji/coupon/del"//删除优惠券；
+/**当即热卖*/
+#define Hot_Type_Url  @"http://192.168.1.71/duoji/seasonHot/seasonHots"
+#define Venues_Url @"http://192.168.1.71/duoji/venue/venues"
+#define Choice_Url @"http://192.168.1.71/duoji/styleChoice/styles"//?data={"styleChoiceType":1} 风格精选
+#define Single_Url @"http://192.168.1.71/duoji/characteristic/single"//单品列表
+#define Popular_Url @"http://192.168.1.71/duoji/characteristic/popular"
+#define PopularKeys_Url @"http://192.168.1.71/duoji/characteristic/popularKeys"//一周流行词汇
+
+#define VenueThemePro_Url @"http://192.168.1.71/duoji/venue/themeProducts"
+#define VenueTheme_Url @"http://192.168.1.71/duoji/venue/themes"
+/**获取全部商品标签*/
+#define productLabels_Url @"http://192.168.1.71/duoji/common/productLabels"
+#define PriceIntervals_Url @"http://192.168.1.71/duoji/common/priceIntervals"
+#define Choice_List_Pro_Url @"http://192.168.1.71/duoji/choiceSuper/listProduct"//精选优品商品
+
+#define Design_Opt_Url @"http://192.168.1.71/duoji/design/disucss"//设计馆点赞
+
+#define ChoiceDress_Url @"http://192.168.1.71/duoji/choiceDress/subjects"//获取（精品男装：1、潮流女装：2）主题
+#define Pro_Detail_Url @"http://192.168.1.71/duoji/product/detail"//商品详情接口
+#define Design_List @"http://192.168.1.71/duoji/design/designs"
+#define Choice_List_Url @"http://192.168.1.71/duoji/choiceSuper/list"
+#define Pro_Label_Url @"http://192.168.1.71/duoji/common/productLabels"
+#define SendSmsCode_Url @"http://192.168.1.71/duoji/customer/sendSmsCode"//发送短信验证码
+#define CheckSms_Url @"http://192.168.1.71/duoji/customer/register"//验证短信
+#define Login_Url @"http://192.168.1.71/duoji/customer/login"//登录接口
+#define ChangePassword_Url @"http://192.168.1.71/duoji/customer/password/reset"
+#define MyActivity_Url @"http://192.168.1.71/duoji/activity/list"//我的活动
+#define History_Url @"http://192.168.1.71/duoji/browseRecord/list"
+#define AddCollect_Url @"http://192.168.1.71/duoji/collect/add"//添加关注
+#define ShareIs_Good_Bad_Url @"http://192.168.1.71/duoji/share/discuss"//发现点赞
+
+#define ReviceAddress_Url @"http://192.168.1.71/duoji/customer/reviceAddress"//获取收货地址
+#define DeleAddress_Url @"http://192.168.1.71/duoji/customer/reviceAddress/del"
+#define Attention_Url @"http://192.168.1.71/duoji/collect/list"
+#define YouHuiJuan_List_Url @"http://192.168.1.71/duoji/coupon/list"//优惠券列表
+#define DuoDou_List_Url @"http://192.168.1.71/duoji/integral/records"//哆豆记录列表
+#define UserCenter_Data_Url @"http://192.168.1.71/duoji/customer/personalCenter/statistics"//个人中心接口
+#define FindList_Url @"http://192.168.1.71/duoji/share/list"//发现列表
+#define ShopCarList_Url @"http://192.168.1.71/duoji/shoppingCart/list"//购物车列表
+#define DeleShopCar_Url @"http://192.168.1.71/duoji/shoppingCart/del"//删除购物车
+#define CreatOrder_Url @"http://192.168.1.71/duoji/order/create"//订单创建
+#define AllComment_Url @"http://192.168.1.71/duoji/product/getDiscuss"
+#define ZhiFuBaoPayURL @""
+#define WeiXinPayURL @""
+
+#pragma mark - 支付相关
+
+#define getOrderInfo_Url @"http://192.168.1.71/duoji/order/create"//订单创建
+#define addShopCar_url @"http://192.168.1.71/duoji/shoppingCart/put"//加入购物车
+#define reviceAddress_url @"http://192.168.1.71/duoji/customer/reviceAddress"//收货地址列表
+#define reviceAddress_edit_url @"http://192.168.1.71/duoji/customer/reviceAddress/edit"//新增/修改 收货地址列表
+#define couponList_url @"http://192.168.1.71/duoji/coupon/list"//优惠券列表
+#define getOrderTotalSum @"http://192.168.1.71/duoji/order/payDetailed"// 获取支付订单金额
+#define getOrderList @"http://192.168.1.71/duoji/order/list"// 获取订单列表
+#define todayoffersProducts @"http://192.168.1.71/duoji/offers/products"// 今日特价
+#define todayrecommendItemUrl @"http://192.168.1.71/duoji/recommend/products"
+#define shareOrderHostoryUrl @"http://192.168.1.71/duoji/share/list" //晒单历史
+#define cancelOrderUrl @"http://192.168.1.71/duoji/order/cancel" //晒单历史
+
+
+
+#define homePageSeckillTims_url @"http://192.168.1.71/duoji/seckill/times"//获取秒杀时间段
+#define homePageSeckillProduct_url @"http://192.168.1.71/duoji/seckill/list"//后去秒杀时间段的商品
+
+/**
+ *  @prama 图片
+ */
+#define IMAGE(imageName) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:imageName]]
+#define IMAGE_NAME(imageName) [UIImage imageNamed:imageName]
+
+/**
+ *  @prama rgb色彩
+ */
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255. green:g/255. blue:b/255. alpha:a]
+/**
+ *  @prama 二进制色彩
+ */
+#define ColorHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+/**
+ *消息提示
+ */
+#define Toast(msg) [self.view makeToast:(msg) duration:1.5f position:CSToastPositionCenter]
+#define ToastView(msg) [self makeToast:(msg) duration:1.0f position:CSToastPositionCenter]
+ 
+
+/**
+ *  @prama 随机颜色
+ */
+#define MRRandomColor RGBA(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), 1)
+/**
+ *  @prama 类灰色彩
+ */
+#define LGBgColor RGBA(249, 249, 249, 1)
+
+/**
+ *  @prama Toast
+ */
+#define Toast(msg) [self.view makeToast:(msg) duration:1.5f position:CSToastPositionCenter]
+#define ToastView(msg) [self makeToast:(msg) duration:1.0f position:CSToastPositionCenter]
+
+
+//------------------------------------------------------------------ 屏幕
+/**
+ *  @prama 屏幕大小
+ *  mainScreenWidth   屏幕宽度
+ *  mainScreenHeight  屏幕高度
+ */
+#define mainScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define mainScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define refreshScreen CGRectMake(0, 64, mainScreenWidth, mainScreenHeight - 64);
+
+/**
+ *  @prama 适配屏幕标准
+ */
+//# define ORIGIN_HEIGHT  568.f
+//# define ORIGIN_WIDTH   320.f
+# define ORIGIN_HEIGHT  667.f
+# define ORIGIN_WIDTH   375.f
+# define DH_INLINE   static inline
+# define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+DH_INLINE CGFloat AdapterHeight()
+{
+    return SCREEN_SIZE.height / ORIGIN_HEIGHT;
+}
+
+DH_INLINE CGFloat AdapterWidth()
+{
+    return SCREEN_SIZE.width / ORIGIN_WIDTH;
+}
+
+DH_INLINE CGPoint DHFlexibleCenter(CGPoint center)
+{
+    return CGPointMake(center.x * AdapterWidth(), center.y * AdapterHeight());
+}
+#define ADAPT_IPHONE4
+
+#ifdef ADAPT_IPHONE4
+DH_INLINE CGSize DHFlexibleSize(CGSize size, BOOL adjustWidth)
+{
+    if (adjustWidth) {
+        return CGSizeMake(size.width * AdapterHeight(), size.height*AdapterHeight());
+    }
+    
+    return CGSizeMake(size.width * AdapterWidth(), size.height * AdapterHeight());
+}
+
+DH_INLINE CGRect DHFlexibleFrame(CGRect frame, BOOL adjustWidth)
+{
+    CGPoint center = CGPointMake(frame.origin.x + frame.size.width/2, frame.origin.y + frame.size.height/2);
+    
+    center = DHFlexibleCenter(center);
+    
+    CGRect retFrame ;
+    CGSize size = DHFlexibleSize(frame.size, adjustWidth);
+    retFrame.origin.x = center.x - size.width/2;
+    retFrame.origin.y = center.y - size.height/2;
+    retFrame.size = size;
+    return retFrame;
+}
+
+#else
+DH_INLINE CGSize DHFlexibleSize(CGSize size)
+{
+    return CGSizeMake(size.width * AdapterWidth(), size.height * AdapterHeight());
+    
+}
+
+DH_INLINE CGRect DHFlexibleFrame(CGRect frame)
+{
+    CGFloat x = frame.origin.x * AdapterWidth();
+    CGFloat y = frame.origin.y * AdapterHeight();
+    
+    CGRect retFrame ;
+    retFrame.origin.x = x;
+    retFrame.origin.y = y;
+    CGSize size = DHFlexibleSize(frame.size);
+    retFrame.size = size;
+    return retFrame;
+}
+#endif
+
+#endif /* PrefixHeader_pch */
